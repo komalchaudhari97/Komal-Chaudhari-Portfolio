@@ -4687,3 +4687,31 @@ input, select, textarea {
 		}
 
 	}
+	.post .content-wrapper {
+		display: flex;
+		align-items: center; /* Vertically centers image and text */
+		justify-content: space-between; /* Ensures equal space between image and text */
+		gap: 20px; /* Adds space between the image and text */
+	}
+	
+	.image {
+		flex-shrink: 0; /* Prevents the image from shrinking */
+	}
+	
+	.side-img {
+		width: 200px;  /* Adjusts the size of the image */
+		height: 180px;  /* Maintains aspect ratio */
+		border-radius: 100%; /* Makes the image circular */
+		border: 4px solid #7d7d7d; /* Adds a solid blue border */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+	}
+	
+	.text {
+		flex: 1; /* Ensures the text takes up the remaining space */
+	}
+	
+	h3 {
+		margin: 0; /* Removes extra margin around the header */
+		word-wrap: break-word; /* Ensures text wraps to fit within the available space */
+	}
+
